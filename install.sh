@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # create dirs
-mkdir -p ~/.fonts
+mkdir -p ~/.local/share/fonts
 mkdir -p ~/.config/i3
 
 # move files
