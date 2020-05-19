@@ -15,5 +15,5 @@
 * lxappearance
 
 Добавить cron `crontab -e`:
-* `* * * * * env DISPLAY=:0.0 feh --randomize --bg-scale /home/koljasha/Изображения/`
+* `* * * * * env DISPLAY=:0.0 feh --randomize --bg-scale ~/Изображения/`
 
