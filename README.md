@@ -4,8 +4,9 @@
 * i3-wm
 * i3lock
 * i3status
+* dmenu
 * feh
-* compton (дополнительно, раскомментировать в config)
+* compton
 
 Темы для GTK:
 * lxappearance
