@@ -1,15 +1,19 @@
 ## i3wm
 
 Установить:
-* i3-wm
+* i3 (i3-gaps)
 * i3lock
 * i3status
 * dmenu
 * feh
 * compton
 
+Установка конфигурации:
+* `./install.sh`
+
 Темы для GTK:
 * lxappearance
 
-Установка конфигурации:
-* `./install.sh`
+Добавить cron `crontab -e`:
+* `* * * * * env DISPLAY=:0.0 feh --randomize --bg-scale /home/koljasha/Изображения/`
+
