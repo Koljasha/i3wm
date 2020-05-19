@@ -5,6 +5,7 @@
 * i3lock
 * i3status
 * dmenu
+* rofi
 * feh
 * compton
 
