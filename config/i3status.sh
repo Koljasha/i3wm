@@ -1,4 +1,13 @@
+#!/usr/bin/env bash
+
 # script i3status extended by Koljasha
+
+function func_language {
+    if [[ $(xset -q | awk '{print $4}' | sed -n 8p) = "off"  ]]
+    then echo ' En'
+    else echo ' Ru'
+    fi
+}
 
 i3status -c ~/.config/i3/i3status.conf |
 (
@@ -9,7 +18,7 @@ i3status -c ~/.config/i3/i3status.conf |
 
     do
         memory=`free -h | awk '{print "", $3, "/", $2}' | sed -n 2p`
-        language=`~/.config/i3/language.sh`
+        language=`func_language`
 
         read line
 
