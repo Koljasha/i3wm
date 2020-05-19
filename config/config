@@ -352,7 +352,7 @@ exec_always --no-startup-id numlockx on
 
 # Backgroung image:
 # exec --no-startup-id feh --bg-scale ~/Изображения/.Wolf.jpg
-exec --no-startup-id env DISPLAY=:0.0 feh --randomize --bg-scale /home/koljasha/Изображения/
+exec --no-startup-id env DISPLAY=:0.0 feh --randomize --bg-scale ~/Изображения/
 
 # Image for i3lock:
 bindsym $mod+Shift+l exec i3lock -c 000000 -i ~/Изображения/.Water.png
