@@ -186,6 +186,7 @@ hide_edge_borders both
 bar {
         colors {
             background $bg-color
+            statusline #99d3ff
             separator #757575
 
             #class              border              bachground          text

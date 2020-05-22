@@ -24,7 +24,7 @@ i3status -c ~/.config/i3/i3status.conf |
 
         echo ",[
             { \"full_text\":\"$language\",\"color\":\"#00ff00\" },
-            { \"full_text\":\"$memory\",\"color\":\"#00ffff\" },
+            { \"full_text\":\"$memory\",\"color\":\"#99d3ff\" },
             ${line#,\[}
             " || exit 1
     done
