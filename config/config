@@ -97,16 +97,16 @@ bindsym $mod+space focus mode_toggle
 # bindsym $mod+d focus child
 
 # Workspaces
-set $workspace1 "1: "
+set $workspace1 "1:  "
 set $workspace2 "2: "
 set $workspace3 "3: "
-set $workspace4 "4: "
+set $workspace4 "4:  "
 set $workspace5 "5:  "
 set $workspace6 "6: "
 set $workspace7 "7: "
 set $workspace8 "8: "
-set $workspace9 "9: "
-set $workspace10 "10: "
+set $workspace9 "9:  "
+set $workspace10 "10:  "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -343,6 +343,7 @@ bindsym $mod+n exec thunar
 # assign [class="Terminator"] $workspace1
 assign [class="Thunar"] $workspace4
 assign [class="Firefox"] $workspace5
+assign [class="vlc"] $workspace9
 assign [class="Remmina"] $workspace10
 
 # Volume control (type 1):
