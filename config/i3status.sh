@@ -17,7 +17,7 @@ i3status -c ~/.config/i3/i3status.conf |
     while true
 
     do
-        memory=`free -h | awk '{print "", $3, "/", $2}' | sed -n 2p`
+        memory=`free -h | awk '{print " U:"$3"/T:"$2}' | sed -n 2p`
         language=`func_language`
 
         read line
@@ -36,7 +36,7 @@ exit 0
 ###     аналогично выше + дублируем memory после i3status
 
     do
-        memory=`free -h | awk '{print "", $3, "/", $2}' | sed -n 2p`
+        memory=`free -h | awk '{print " U:"$3"/T:"$2}' | sed -n 2p`
         language=`~/.config/i3/language.sh`
 
         read line

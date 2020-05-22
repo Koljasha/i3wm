@@ -17,7 +17,7 @@ font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
+font pango:DejaVu Sans Mono 9
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -98,13 +98,13 @@ bindsym $mod+space focus mode_toggle
 
 # Workspaces
 set $workspace1 "1:  "
-set $workspace2 "2: "
-set $workspace3 "3: "
+set $workspace2 "2:  "
+set $workspace3 "3:  "
 set $workspace4 "4:  "
 set $workspace5 "5:  "
-set $workspace6 "6: "
-set $workspace7 "7: "
-set $workspace8 "8: "
+set $workspace6 "6:  "
+set $workspace7 "7:  "
+set $workspace8 "8:  "
 set $workspace9 "9:  "
 set $workspace10 "10:  "
 
@@ -360,6 +360,10 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
 # Numlock on:
 exec_always --no-startup-id numlockx on
+
+# Disable screensaver
+exec_always --no-startup-id xset s off
+exec_always --no-startup-id xset -dpms
 
 # Backgroung image:
 # exec --no-startup-id feh --bg-scale ~/Изображения/.Wolf.jpg

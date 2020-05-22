@@ -4,6 +4,7 @@
 * i3 (i3-gaps)
 * i3lock
 * i3status
+* polybar (дополнительно)
 * dmenu
 * rofi
 * feh
@@ -18,7 +19,3 @@
 Добавить cron `crontab -e`:
 * `* * * * * env DISPLAY=:0.0 feh --randomize --bg-scale ~/Изображения/`
 
-Удалить настройки X.org screensaver:
-* show : `xset q`
-* disable screensaver: `xset s off`
-* disable power saving: `xset -dpms`
