@@ -4,6 +4,7 @@
 * i3 (i3-gaps)
 * i3lock
 * i3status
+* py3status (дополнительно)
 * polybar (дополнительно)
 * dmenu
 * rofi

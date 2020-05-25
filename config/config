@@ -207,8 +207,13 @@ bar {
             urgent_workspace    $urgent-bg-color    $urgent-bg-color    $text-color
             }
 
+        # i3status
         # status_command i3status --config ~/.config/i3/i3status.conf
         status_command exec ~/.config/i3/i3status.sh
+
+        # py3status
+        # status_command py3status --config ~/.config/i3/i3status.conf
+
         position top
 }
 
