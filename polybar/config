@@ -55,7 +55,7 @@ margin-bottom = 5
 ;==========================================================
 
 [bar/polybar]
-bottom = true
+bottom = false
 
 width = 100%
 height = 25
@@ -100,13 +100,14 @@ locale = "ru_RU.UTF-8"
 
 modules-left = i3
 modules-center = xwindow
-modules-right = xkeyboard pulseaudio memory filesystem cpu temperature wlan eth date
+modules-right = xkeyboard pulseaudio memory filesystem cpu temperature vpn wlan eth date
 
 ;==========================================================
 ;==========================================================
-
 
 ; modules-left
+
+;==========================================================
 
 [module/i3]
 type = internal/i3
@@ -141,6 +142,8 @@ label-separator = |
 
 ; modules-center
 
+;==========================================================
+
 [module/xwindow]
 type = internal/xwindow
 
@@ -152,12 +155,17 @@ label = %title:0:70:...%
 
 ; modules-right
 
+;==========================================================
+
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-label-layout-underline = ${colors.red}
-label-layout =   %layout%
+format-prefix = "  "
+format-prefix-foreground = ${colors.red}
+format-underline = ${colors.red}
+
+label-layout = %layout%
 
 label-indicator-padding = 2
 label-indicator-margin = 1
@@ -170,9 +178,12 @@ label-indicator-underline = ${colors.red}
 type = internal/pulseaudio
 interval = 2
 
+format-volume-prefix = "  "
+format-volume-prefix-foreground = ${colors.red}
+
 format-volume = <label-volume>
 format-volume-underline = ${colors.red}
-label-volume =   %percentage%%
+label-volume = %percentage%%
 
 format-muted-foreground = ${colors.gray}
 format-muted-underline = ${colors.gray}
@@ -184,8 +195,11 @@ label-muted =  muted
 type = internal/memory
 interval = 2
 
+format-prefix = "  "
+format-prefix-foreground = ${colors.yellow}
+
 format-underline = ${colors.yellow}
-label =   U:%gb_used% | T:%gb_total%
+label = U:%gb_used% | T:%gb_total%
 
 ;==========================================================
 
@@ -195,8 +209,11 @@ interval = 5
 
 mount-0 = /
 
+format-mounted-prefix = "  "
+format-mounted-prefix-foreground = ${colors.yellow}
+
 format-mounted-underline = ${colors.yellow}
-label-mounted =   U:%used% | T:%total%
+label-mounted = U:%used% | T:%total%
 
 ;==========================================================
 
@@ -204,14 +221,20 @@ label-mounted =   U:%used% | T:%total%
 type = internal/cpu
 interval = 2
 
+format-prefix = " "
+format-prefix-foreground = ${colors.yellow}
+
 format-underline = ${colors.yellow}
-label =  %percentage%%
+label = %percentage%%
 
 ;==========================================================
 
 [module/temperature]
 type = internal/temperature
 interval = 1
+
+format-prefix = " "
+format-prefix-foreground = ${colors.yellow}
 
 format = <label>
 format-underline = ${colors.yellow}
@@ -220,8 +243,22 @@ format-warn = <label-warn>
 format-warn-underline = ${colors.red}
 label-warn-foreground = ${colors.red}
 
-label =  %temperature-c%
+label = %temperature-c%
 label-warn =  %temperature-c%
+
+;==========================================================
+
+[module/vpn]
+type = custom/script
+interval = 2
+
+exec = echo "Vpn"
+exec-if = pgrep -x openvpn
+
+format-prefix = "  "
+format-prefix-foreground = ${colors.green}
+
+format-underline = ${colors.green}
 
 ;==========================================================
 
@@ -230,14 +267,18 @@ type = internal/network
 interface = wlp2s0
 interval = 2
 
+format-connected-prefix = "  "
+format-connected-prefix-foreground = ${colors.green}
+
 format-connected = <label-connected>
 format-connected-underline = ${colors.green}
-label-connected =   %essid% %local_ip%
+label-connected = %essid% %local_ip%
 
 format-disconnected = <label-disconnected>
 format-disconnected-underline = ${colors.gray}
 label-disconnected-foreground = ${colors.gray}
-label-disconnected =   down
+label-disconnected =
+; label-disconnected =   down
 
 ;==========================================================
 
@@ -246,9 +287,12 @@ type = internal/network
 interface = enp1s0
 interval = 2
 
+format-connected-prefix = "  "
+format-connected-prefix-foreground = ${colors.green}
+
 format-connected = <label-connected>
 format-connected-underline = ${colors.green}
-label-connected =   %local_ip%
+label-connected = %local_ip%
 
 format-disconnected = <label-disconnected>
 format-disconnected-underline = ${colors.gray}
@@ -264,8 +308,11 @@ interval = 1
 date= "%A %Y-%m-%d"
 time = %H:%M:%S
 
-format-underline = ${colors.blue}
-label =   %date% %time%
+format-prefix = "  "
+format-prefix-foreground = ${colors.red}
+
+format-underline = ${colors.red}
+label = %date% %time%
 
 ;==========================================================
 ;==========================================================
