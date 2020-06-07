@@ -379,7 +379,7 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 # Numlock on:
 exec_always --no-startup-id numlockx on
 
-# Disable screensaver
+# Disable Xorg screensaver
 exec_always --no-startup-id xset s off
 exec_always --no-startup-id xset -dpms
 
