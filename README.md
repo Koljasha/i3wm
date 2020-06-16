@@ -10,6 +10,7 @@
 * rofi
 * feh
 * compton
+* plank (дополнительно)
 
 Установка конфигурации:
 * `./install.sh`
