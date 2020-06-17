@@ -1,16 +1,15 @@
 ## i3wm
 
 Установить:
-* i3 (i3-gaps)
+* i3 (i3-gaps - в конфиге)
 * i3lock
 * i3status
-* py3status (дополнительно)
-* polybar (дополнительно)
+* polybar (в конфиге)
 * dmenu
-* rofi
+* rofi (в конфиге)
 * feh
 * compton
-* plank (дополнительно)
+* plank (в конфиге)
 
 Установка конфигурации:
 * `./install.sh`
