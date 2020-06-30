@@ -4,7 +4,7 @@
 * i3 (i3-gaps - в конфиге)
 * i3lock
 * i3status
-* polybar (в конфиге)
+* polybar (в конфиге - собственный скрипт отображения памяти, как в htop)
 * dmenu
 * rofi (в конфиге)
 * feh
@@ -19,4 +19,3 @@
 
 Добавить cron `crontab -e`:
 * `* * * * * env DISPLAY=:0.0 feh --randomize --bg-scale ~/Изображения/`
-
