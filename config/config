@@ -357,9 +357,10 @@ bindsym $mod+b exec firefox
 bindsym $mod+n exec thunar
 
 # Plank
-bindsym $mod+grave exec plank
-bindsym $mod+Shift+grave exec i3-msg "workspace $workspace2"; exec xprop -name "plank" -remove _NET_WM_WINDOW_TYPE
-bindsym $mod+Shift+p exec killall plank
+# bindsym $mod+grave exec plank
+# bindsym $mod+Shift+grave exec i3-msg "workspace $workspace2"; exec xprop -name "plank" -remove _NET_WM_WINDOW_TYPE
+# bindsym $mod+Shift+p exec killall plank
+# Description:
 # change Workspace
 # xprop -name "plank" -remove _NET_WM_WINDOW_TYPE
 # Change back Workspace
