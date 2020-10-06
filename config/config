@@ -354,7 +354,7 @@ mode "$mode_gaps_left" {
 
 # Bind for app:
 bindsym $mod+b exec firefox
-bindsym $mod+n exec thunar
+bindsym $mod+n exec pcmanfm
 
 # Plank
 # bindsym $mod+grave exec plank
@@ -369,7 +369,7 @@ bindsym $mod+n exec thunar
 # Workspace for app:
 # (name of class - command: xprop)
 # assign [class="Terminator"] $workspace1
-assign [class="Thunar"] $workspace4
+assign [class="Pcmanfm"] $workspace4
 assign [class="Firefox"] $workspace5
 assign [class="vlc"] $workspace9
 assign [class="Remmina"] $workspace10
