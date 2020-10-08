@@ -28,10 +28,11 @@ green = #55aa55
 light_blue = #99d3ff
 blue = #134db0
 
-light_gray = #dfdfdf
+light_gray = #3f3f3f
 gray = #444444
 dark_gray = #222222
 
+white = #dfdfdf
 black = #000000
 
 ;==========================================================
@@ -97,6 +98,7 @@ cursor-scroll = ns-resize
 locale = "ru_RU.UTF-8"
 
 modules-left = i3
+; modules-left = ewmh
 modules-center = xwindow
 modules-right = xkeyboard pulseaudio memory_htop filesystem cpu temperature vpn wlan eth date
 
@@ -133,6 +135,20 @@ label-urgent-padding = 2
 
 ; Separator in between workspaces
 label-separator = |
+
+;==========================================================
+
+[module/ewmh]
+type = internal/xworkspaces
+
+enable-click = true
+
+label-active = %name%
+
+label-active-foreground = ${colors.white}
+label-active-background = ${colors.light_gray}
+label-active-underline = ${colors.yellow}
+label-active-padding = 5
 
 ;==========================================================
 ;==========================================================
