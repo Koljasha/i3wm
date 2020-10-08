@@ -212,6 +212,8 @@ format-prefix-foreground = ${colors.yellow}
 
 format-underline = ${colors.yellow}
 
+click-left = terminator -m -x htop
+
 ;==========================================================
 
 [module/filesystem]
