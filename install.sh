@@ -7,9 +7,10 @@ mkdir -p ~/.config/rofi
 mkdir -p ~/.config/polybar
 
 # move files
-cp fonts/* ~/.fonts/
 cp images/.W* ~/Изображения/
-cp config/* ~/.config/i3/
+cp fonts/* ~/.local/share/fonts
+
+cp i3/* ~/.config/i3/
 cp rofi/* ~/.config/rofi/
 cp polybar/* ~/.config/polybar/
 
