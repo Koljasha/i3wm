@@ -218,7 +218,7 @@ hide_edge_borders both
 # }
 
 # Polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/i3.sh
 
 #####################
 #Gaps
@@ -360,7 +360,6 @@ bindsym $mod+n exec pcmanfm
 # bindsym $mod+grave exec plank
 # bindsym $mod+Shift+grave exec i3-msg "workspace $workspace2"; exec xprop -name "plank" -remove _NET_WM_WINDOW_TYPE
 # bindsym $mod+Shift+p exec killall plank
-# Description:
 # change Workspace
 # xprop -name "plank" -remove _NET_WM_WINDOW_TYPE
 # Change back Workspace

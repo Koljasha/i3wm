@@ -7,6 +7,6 @@ killall -q polybar
 
 # Launch bars
 echo "---" | tee -a /tmp/polybar.log
-polybar polybar >>/tmp/polybar.log 2>&1 &
+polybar -c ~/.config/polybar/i3.conf polybar >>/tmp/polybar.log 2>&1 &
 
 echo "Bars launched..."
