@@ -21,8 +21,8 @@
 numlockx on &
 
 # Disable Xorg screensaver
-xset s off &
 xset -dpms &
+xset s off &
 
 # Backgroung image:
 env DISPLAY=:0.0 feh --randomize --bg-scale ~/Изображения/ &
