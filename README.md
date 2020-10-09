@@ -29,6 +29,9 @@
 * compton (в конфиге)
 * plank (в конфиге)
 
+Создание меню:
+* [MenuMaker](http://menumaker.sourceforge.net/)
+
 [Темы](https://github.com/Koljasha/oh-my-linux/tree/master/themes):
 * lxappearance
 * obconf
