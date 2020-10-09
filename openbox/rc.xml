@@ -220,13 +220,13 @@
     </keybind>
     <keybind key="C-A-Up">
       <action name="SendToDesktop">
-        <to>left</to>
+        <to>right</to>
         <wrap>no</wrap>
       </action>
     </keybind>
     <keybind key="C-A-Down">
       <action name="SendToDesktop">
-        <to>right</to>
+        <to>left</to>
         <wrap>no</wrap>
       </action>
     </keybind>
