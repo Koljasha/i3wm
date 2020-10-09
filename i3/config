@@ -397,7 +397,7 @@ exec_always --no-startup-id xset -dpms
 exec --no-startup-id env DISPLAY=:0.0 feh --randomize --bg-scale ~/Изображения/
 
 # Image for i3lock:
-bindsym $mod+Shift+l exec i3lock -c 000000 -i ~/Изображения/.Water.png
+bindsym $mod+Shift+l exec i3lock -c 000000 -i ~/Изображения/.Wolf.png
 
 # Transparency:
 exec --no-startup-id compton -f --vsync drm --backend glx
