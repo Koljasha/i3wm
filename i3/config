@@ -141,7 +141,7 @@ bindsym $mod+Shift+r restart
 
 # Create Log out, Reboot, Poweroff bindings
 mode "Exit: Mod + [(L)ogout, (S)uspend, (R)eboot, (P)oweroff]" {
-        bindsym $mod+Shift+l exit
+        bindsym $mod+Shift+l exec i3-msg exit
         bindsym $mod+Shift+s exec systemctl -i suspend
         bindsym $mod+Shift+r exec systemctl -i reboot
         bindsym $mod+Shift+p exec systemctl -i poweroff
@@ -150,7 +150,7 @@ mode "Exit: Mod + [(L)ogout, (S)uspend, (R)eboot, (P)oweroff]" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-bindsym $mod+Shift+e mode "Exit: Mod + [(L)ogout, (R)eboot, (P)oweroff]"
+bindsym $mod+Shift+e mode "Exit: Mod + [(L)ogout, (S)uspend, (R)eboot, (P)oweroff]"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -358,7 +358,7 @@ bindsym $mod+b exec firefox
 bindsym $mod+n exec pcmanfm
 
 # jgmenu
-bindsym $mod+grave exec jgmenu_run
+bindsym $mod+grave exec --no-startup-id jgmenu_run
 
 # Plank
 # bindsym $mod+grave exec plank
