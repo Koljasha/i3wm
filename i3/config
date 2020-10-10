@@ -44,7 +44,11 @@ bindsym $mod+Shift+q kill
 
 # Rofi
 bindsym $mod+d exec --no-startup-id "rofi -show window"
+bindsym $mod+Tab exec --no-startup-id "rofi -show window"
 bindsym $mod+Shift+d exec --no-startup-id "rofi -show drun"
+
+# jgmenu
+bindsym $mod+grave exec --no-startup-id jgmenu_run
 
 # change focus
 # bindsym $mod+j focus left
@@ -357,9 +361,6 @@ mode "$mode_gaps_left" {
 bindsym $mod+b exec firefox
 bindsym $mod+n exec pcmanfm
 
-# jgmenu
-bindsym $mod+grave exec --no-startup-id jgmenu_run
-
 # Plank
 # bindsym $mod+grave exec plank
 # bindsym $mod+Shift+grave exec i3-msg "workspace $workspace2"; exec xprop -name "plank" -remove _NET_WM_WINDOW_TYPE
@@ -396,13 +397,13 @@ exec_always --no-startup-id numlockx on
 exec_always --no-startup-id xset s off
 exec_always --no-startup-id xset -dpms
 
+# Transparency:
+exec --no-startup-id compton -f --vsync drm --backend glx
+
 # Backgroung image:
 # exec --no-startup-id feh --bg-scale ~/Изображения/.Wolf.jpg
 exec --no-startup-id env DISPLAY=:0.0 feh --randomize --bg-scale ~/Изображения/
 
 # Image for i3lock:
 bindsym $mod+Shift+l exec i3lock -c 000000 -i ~/Изображения/.Wolf.png
-
-# Transparency:
-exec --no-startup-id compton -f --vsync drm --backend glx
 
