@@ -123,8 +123,8 @@
     <number>2</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>Table 1</name>
-      <name>Table 2</name>
+      <name> 1</name>
+      <name> 2</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
