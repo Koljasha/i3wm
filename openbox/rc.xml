@@ -192,12 +192,22 @@
         <command>xfce4-appfinder</command>
       </action>
     </keybind>
+    <keybind key="W-grave">
+      <action name="Execute">
+        <command>jgmenu_run</command>
+      </action>
+    </keybind>
     <keybind key="W-S-q">
       <action name="Close"/>
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
         <command>terminator -m</command>
+      </action>
+    </keybind>
+    <keybind key="W-Tab">
+      <action name="Execute">
+        <command>rofi -show window</command>
       </action>
     </keybind>
     <keybind key="W-d">
