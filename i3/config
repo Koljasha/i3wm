@@ -407,3 +407,9 @@ exec --no-startup-id env DISPLAY=:0.0 feh --randomize --bg-scale ~/Изобра�
 # Image for i3lock:
 bindsym $mod+Shift+l exec i3lock -c 000000 -i ~/Изображения/.Wolf.png
 
+# NetworkManager applet
+exec --no-startup-id nm-applet
+
+# Mint Update launcher
+# exec --no-startup-id mintupdate-launcher
+
