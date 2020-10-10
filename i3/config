@@ -356,6 +356,9 @@ mode "$mode_gaps_left" {
 bindsym $mod+b exec firefox
 bindsym $mod+n exec pcmanfm
 
+# jgmenu
+bindsym $mod+grave exec jgmenu_run
+
 # Plank
 # bindsym $mod+grave exec plank
 # bindsym $mod+Shift+grave exec i3-msg "workspace $workspace2"; exec xprop -name "plank" -remove _NET_WM_WINDOW_TYPE
