@@ -7,6 +7,7 @@ mkdir -p ~/.config/i3
 
 mkdir -p ~/.config/polybar
 mkdir -p ~/.config/rofi
+mkdir -p ~/.config/jgmenu
 
 # move files
 cp images/.W* ~/Изображения/
@@ -16,6 +17,7 @@ cp i3/* ~/.config/i3/
 
 cp polybar/* ~/.config/polybar/
 cp rofi/* ~/.config/rofi/
+cp jgmenu/* ~/.config/jgmenu/
 
 # del install dir
 cd ..

@@ -7,6 +7,7 @@
 * dmenu
 * [polybar](https://github.com/polybar/polybar) (в конфиге - собственный скрипт отображения памяти, как в htop)
 * [rofi](https://github.com/davatorium/rofi) (в конфиге)
+* [jgmenu](https://github.com/johanmalm/jgmenu) (в конфиге)
 * feh (в конфиге)
 * compton (в конфиге)
 * plank
@@ -25,6 +26,7 @@
 * [openbox](http://openbox.org/wiki/Main_Page)
 * [polybar](https://github.com/polybar/polybar) (в конфиге - собственный скрипт отображения памяти, как в htop)
 * [rofi](https://github.com/davatorium/rofi) (в конфиге)
+* [jgmenu](https://github.com/johanmalm/jgmenu) (в конфиге)
 * feh (в конфиге)
 * compton (в конфиге)
 * plank (в конфиге)
