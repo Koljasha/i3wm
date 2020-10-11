@@ -33,6 +33,7 @@
 
 Создание меню:
 * [MenuMaker](http://menumaker.sourceforge.net/)
+* `mmaker -f -t GNOME-terminal OpenBox3`
 
 [Темы](https://github.com/Koljasha/oh-my-linux/tree/master/themes):
 * lxappearance
