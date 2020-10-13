@@ -1,4 +1,5 @@
-Terminal,x-terminal-emulator -m,utilities-terminal
+Terminator,terminator -m,terminator
+Terminology,terminology -M,terminology
 Browser,firefox,firefox
 File manager,pcmanfm,system-file-manager
 ^sep()
