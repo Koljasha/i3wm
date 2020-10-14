@@ -18,6 +18,12 @@
 Установка конфигурации:
 * `./i3wm.sh`
 
+Дополнительно в конфиге:
+* numlockx
+* nm-applet
+* polkit-gnome-authentication-agent-1 (PolicyKit Authentication Agent - Gnome)
+* mintupdate-launcher
+
 ***
 
 ### Openbox
@@ -30,6 +36,7 @@
 * feh (в конфиге)
 * compton (в конфиге)
 * plank (в конфиге)
+* i3lock (в конфиге jgmenu)
 
 Создание меню:
 * [MenuMaker](http://menumaker.sourceforge.net/)
@@ -41,6 +48,10 @@
 
 Установка конфигурации:
 * `./openbox.sh`
+
+Дополнительно в конфиге (autostart):
+* numlockx
+* polkit-gnome-authentication-agent-1 (PolicyKit Authentication Agent - Gnome)
 
 ***
 
