@@ -24,6 +24,9 @@ numlockx on &
 xset -dpms &
 xset s off &
 
+# PolicyKit Authentication Agent - Gnome
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
 # Backgroung image:
 env DISPLAY=:0.0 feh --randomize --bg-scale ~/Изображения/ &
 
