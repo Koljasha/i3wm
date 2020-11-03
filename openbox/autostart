@@ -25,7 +25,7 @@ xset -dpms &
 xset s off &
 
 # Brightness:
-xrandr --output eDP-1 --brightness 0.9 &
+xrandr --output eDP-1 --brightness 0.8 &
 
 # Transparency:
 compton -f --vsync drm --backend glx &

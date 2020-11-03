@@ -405,7 +405,7 @@ exec_always --no-startup-id xset s off
 exec_always --no-startup-id xset -dpms
 
 # Brightness:
-exec --no-startup-id xrandr --output eDP-1 --brightness 0.9
+exec --no-startup-id xrandr --output eDP-1 --brightness 0.8
 
 # Transparency:
 exec --no-startup-id compton -f --vsync drm --backend glx
