@@ -24,14 +24,17 @@ numlockx on &
 xset -dpms &
 xset s off &
 
-# PolicyKit Authentication Agent - Gnome
-/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+# Brightness:
+xrandr --output eDP-1 --brightness 0.9 &
+
+# Transparency:
+compton -f --vsync drm --backend glx &
 
 # Backgroung image:
 env DISPLAY=:0.0 feh --randomize --bg-scale ~/Изображения/ &
 
-# Transparency:
-compton -f --vsync drm --backend glx &
+# PolicyKit Authentication Agent - Gnome
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 # Polybar
 ~/.config/polybar/openbox.sh &
