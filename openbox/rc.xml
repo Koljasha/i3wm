@@ -195,22 +195,12 @@
     <keybind key="W-S-R">
       <action name="Restart"/>
     </keybind>
-    <keybind key="W-grave">
-      <action name="Execute">
-        <command>jgmenu_run</command>
-      </action>
-    </keybind>
     <keybind key="W-S-q">
       <action name="Close"/>
     </keybind>
-    <keybind key="W-Return">
+    <keybind key="W-grave">
       <action name="Execute">
-        <command>terminator -m</command>
-      </action>
-    </keybind>
-    <keybind key="W-S-Return">
-      <action name="Execute">
-        <command>terminology</command>
+        <command>jgmenu_run</command>
       </action>
     </keybind>
     <keybind key="W-Tab">
@@ -228,6 +218,16 @@
         <command>rofi -show drun</command>
       </action>
     </keybind>
+    <keybind key="W-Return">
+      <action name="Execute">
+        <command>terminator -m</command>
+      </action>
+    </keybind>
+    <keybind key="W-S-Return">
+      <action name="Execute">
+        <command>terminology</command>
+      </action>
+    </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
         <command>pactl set-sink-mute 0 toggle</command>
@@ -243,7 +243,42 @@
         <command>pactl set-sink-volume 0 -2%</command>
       </action>
     </keybind>
-    <!-- Keybindings for desktop switching -->
+    <keybind key="W-Left">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="W-Right">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>1/2</x>
+        <y>0</y>
+        <width>50%</width>
+        <height>100%</height>
+      </action>
+    </keybind>
+    <keybind key="W-Up">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
+    <keybind key="W-Down">
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>1/2</y>
+        <width>100%</width>
+        <height>50%</height>
+      </action>
+    </keybind>
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
         <to>left</to>
@@ -268,6 +303,7 @@
         <wrap>no</wrap>
       </action>
     </keybind>
+    <!-- Keybindings Koljasha / -->
     <keybind key="W-F1">
       <action name="GoToDesktop">
         <to>1</to>
