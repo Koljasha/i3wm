@@ -135,6 +135,9 @@
             </action> </item>
         </menu>
         <menu id="5" label="Network">
+            <item label="Chromium Web Browser"> <action name="Execute">
+                <execute>chromium</execute>
+            </action> </item>
             <item label="FireFox"> <action name="Execute">
                 <execute>firefox</execute>
             </action> </item>
@@ -248,7 +251,7 @@
                         <execute>gnome-disks</execute>
                     </action> </item>
                     <item label="Driver Manager"> <action name="Execute">
-                        <execute>pkexec driver-manager</execute>
+                        <execute>driver-manager</execute>
                     </action> </item>
                     <item label="Firewall Configuration"> <action name="Execute">
                         <execute>gufw</execute>
@@ -502,9 +505,6 @@
             </action> </item>
             <item label="Htop"> <action name="Execute">
                 <execute>gnome-terminal -e htop</execute>
-            </action> </item>
-            <item label="Htop"> <action name="Execute">
-                <execute>terminator -m -x htop</execute>
             </action> </item>
             <item label="jgmenu"> <action name="Execute">
                 <execute>jgmenu_run</execute>

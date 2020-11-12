@@ -192,7 +192,7 @@
         <command>xfce4-appfinder</command>
       </action>
     </keybind>
-    <keybind key="W-S-R">
+    <keybind key="W-S-r">
       <action name="Restart"/>
     </keybind>
     <keybind key="W-S-q">
