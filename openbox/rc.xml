@@ -228,6 +228,11 @@
         <command>terminology</command>
       </action>
     </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <command>gnome-screenshot -a</command>
+      </action>
+    </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
         <command>pactl set-sink-mute 0 toggle</command>

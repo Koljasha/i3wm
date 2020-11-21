@@ -385,6 +385,9 @@ assign [class="Firefox"] $workspace5
 assign [class="vlc"] $workspace9
 assign [class="Remmina"] $workspace10
 
+# Screenshot
+bindsym Print exec gnome-screenshot -a
+
 # Volume control (type 1):
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +2%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -2%
