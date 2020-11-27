@@ -69,14 +69,8 @@
                     <execute>xlogo</execute>
                 </action> </item>
             </menu>
-            <item label="Hollow Knight"> <action name="Execute">
-                <execute>lutris lutris:rungameid/6</execute>
-            </action> </item>
             <item label="Lutris"> <action name="Execute">
                 <execute>lutris</execute>
-            </action> </item>
-            <item label="The Binding of Isaac: Rebirth"> <action name="Execute">
-                <execute>lutris lutris:rungameid/1</execute>
             </action> </item>
         </menu>
         <menu id="6" label="Graphics">
@@ -487,6 +481,9 @@
             </action> </item>
             <item label="Bulk Rename"> <action name="Execute">
                 <execute>/usr/lib/x86_64-linux-gnu/Thunar/ThunarBulkRename</execute>
+            </action> </item>
+            <item label="dconf Editor"> <action name="Execute">
+                <execute>dconf-editor</execute>
             </action> </item>
             <item label="Disk Usage Analyzer"> <action name="Execute">
                 <execute>baobab</execute>
