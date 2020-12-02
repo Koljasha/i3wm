@@ -4,9 +4,6 @@
         <item label="Terminator"> <action name="Execute">
             <execute>terminator -m</execute>
         </action> </item>
-        <item label="Terminology"> <action name="Execute">
-            <execute>terminology</execute>
-        </action> </item>
         <item label="FireFox"> <action name="Execute">
             <execute>firefox</execute>
         </action> </item>
