@@ -32,7 +32,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec terminator
-bindsym $mod+Shift+Return exec terminology
+# bindsym $mod+Shift+Return exec terminology
 
 # kill focused window
 bindsym $mod+Shift+q kill

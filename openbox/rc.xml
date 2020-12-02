@@ -192,12 +192,14 @@
         <command>xfce4-appfinder</command>
       </action>
     </keybind>
+    <!--   -->
     <keybind key="W-S-r">
       <action name="Restart"/>
     </keybind>
     <keybind key="W-S-q">
       <action name="Close"/>
     </keybind>
+    <!--   -->
     <keybind key="W-grave">
       <action name="Execute">
         <command>jgmenu_run</command>
@@ -218,16 +220,13 @@
         <command>rofi -show drun</command>
       </action>
     </keybind>
+    <!--   -->
     <keybind key="W-Return">
       <action name="Execute">
         <command>terminator -m</command>
       </action>
     </keybind>
-    <keybind key="W-S-Return">
-      <action name="Execute">
-        <command>terminology</command>
-      </action>
-    </keybind>
+    <!--   -->
     <keybind key="Print">
       <action name="Execute">
         <command>gnome-screenshot -a</command>
@@ -248,6 +247,7 @@
         <command>pactl set-sink-volume 0 -2%</command>
       </action>
     </keybind>
+    <!--   -->
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
@@ -284,6 +284,7 @@
         <height>50%</height>
       </action>
     </keybind>
+    <!--   -->
     <keybind key="C-A-Left">
       <action name="GoToDesktop">
         <to>left</to>
