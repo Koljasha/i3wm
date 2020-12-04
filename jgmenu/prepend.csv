@@ -1,5 +1,4 @@
 Terminator,terminator -m,terminator
-Calculator,gnome-calculator,gnome-calculator
 Browser,firefox,firefox
 File manager,pcmanfm,system-file-manager
 ^sep()
