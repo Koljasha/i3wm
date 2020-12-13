@@ -19,10 +19,16 @@
 * `./i3wm.sh`
 
 Дополнительно в конфиге:
+* gnome-screenshot
 * numlockx
 * nm-applet
 * polkit-gnome-authentication-agent-1 (PolicyKit Authentication Agent - Gnome)
 * mintupdate-launcher
+
+Дополнительно в конфиге (polybar):
+* htop
+* gsimplecal
+* gnome-calendar
 
 ***
 
@@ -49,9 +55,16 @@
 Установка конфигурации:
 * `./openbox.sh`
 
-Дополнительно в конфиге (autostart):
+Дополнительно в конфиге:
+* gnome-screenshot
+* zenity
 * numlockx
 * polkit-gnome-authentication-agent-1 (PolicyKit Authentication Agent - Gnome)
+
+Дополнительно в конфиге (polybar):
+* htop
+* gsimplecal
+* gnome-calendar
 
 ***
 
