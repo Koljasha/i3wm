@@ -2,7 +2,7 @@
 
 # show:
 # $change_brightness
-# change:
+# change (after 1 only min 0.1):
 # $ change_brightness +0.05 or $ change_brightness -0.05
 
 brightness=`xrandr --verbose | grep -i brightness | cut -d':' -f2 | cut -c2-`
