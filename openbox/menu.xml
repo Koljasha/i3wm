@@ -634,10 +634,10 @@
             <separator/>
             <item label="Exit"> <action name="Exit"/> </item>
             <item label="Reboot"> <action name="Execute">
-                    <execute>~/.config/openbox/menu_reboot</execute>
+                <execute>~/.config/openbox/menu_exit_openbox reboot</execute>
             </action> </item>
             <item label="Power Off"> <action name="Execute">
-                <execute>~/.config/openbox/menu_poweroff</execute>
+                <execute>~/.config/openbox/menu_exit_openbox poweroff</execute>
             </action> </item>
         </menu>
     </menu>

@@ -1,4 +1,0 @@
-#!/bin/bash
-
-zenity --question --no-wrap --title "Выключить ПК" --text "Вы действительно хотите выключить Компьютер?" && poweroff
-

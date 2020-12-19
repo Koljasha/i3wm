@@ -1,4 +1,0 @@
-#!/bin/bash
-
-zenity --question --no-wrap --title "Перезагрузить ПК" --text "Вы действительно хотите перезагрузить Компьютер?" && reboot
-
