@@ -2,25 +2,29 @@
 
 # disable display
 off (){
-mouse_id=`xinput list | grep M310 | awk '{print $5}' | cut -d'=' -f2`
-xinput disable $mouse_id
-xset dpms force off
+    # M310 - name of mouse
+    mouse_id=`xinput list | grep M310 | awk '{print $5}' | cut -d'=' -f2`
+    xinput disable $mouse_id
+    xset dpms force off
 }
 
 # enable mouse after disable display
 mouse (){
-mouse_id=`xinput list | grep M310 | awk '{print $5}' | cut -d'=' -f2`
-xinput enable $mouse_id
-xset -dpms
+    # M310 - name of mouse
+    mouse_id=`xinput list | grep M310 | awk '{print $5}' | cut -d'=' -f2`
+    xinput enable $mouse_id
+    xset -dpms
 }
 
 # set brightness
 sbr (){
+    # eDP-1 - display output
     xrandr --output eDP-1 --brightness $1
 }
 
 # disable brightness
 dbr (){
+    # eDP-1 - display output
     default_brightness=`xrandr --verbose | grep -i brightness | cut -d':' -f2 | cut -c2-`
     xrandr --output eDP-1 --brightness 0
     read -n1
