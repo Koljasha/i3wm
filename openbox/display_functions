@@ -9,7 +9,7 @@ off (){
 }
 
 # enable mouse after disable display
-mouse (){
+on (){
     # M310 - name of mouse
     mouse_id=`xinput list | grep M310 | awk '{print $5}' | cut -d'=' -f2`
     xinput enable $mouse_id
@@ -33,15 +33,15 @@ dbr (){
 
 if [[ $1 == 'off' ]]; then
     off
-elif [[ $1 == 'mouse' ]]; then
-    mouse
+elif [[ $1 == 'on' ]]; then
+    on
 elif [[ $1 == 'sbr' ]]; then
     sbr $2
 elif [[ $1 == 'dbr' ]]; then
     dbr
 else
     echo "$0 off    -    for disable display"
-    echo "$0 mouse    -    for enable mouse after disable display"
+    echo "$0 on    -    for enable mouse after disable display"
     echo "$0 sbr {value}   -    for set brightness"
     echo "$0 dbr    -    for disable brightness"
 fi
