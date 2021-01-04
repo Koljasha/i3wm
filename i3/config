@@ -364,6 +364,10 @@ mode "$mode_gaps_left" {
 
 # Scripts for Koljasha
 
+#
+# Binding
+#
+
 # Bind for app:
 bindsym $mod+b exec firefox
 bindsym $mod+n exec pcmanfm
@@ -397,6 +401,13 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 # bindsym $mod+F12 exec amixer -q set Master 2+
 # bindsym $mod+F11 exec amixer -q set Master 2-
 
+# Image for i3lock:
+bindsym $mod+Shift+l exec i3lock -c 000000 -i ~/Изображения/.Wolf.png
+
+#
+# Execute
+#
+
 # Change lang:
 # exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle"
 
@@ -416,9 +427,6 @@ exec --no-startup-id compton -f --vsync drm --backend glx
 # Backgroung image:
 # exec --no-startup-id feh --bg-scale ~/Изображения/.Wolf.jpg
 exec --no-startup-id env DISPLAY=:0.0 feh --randomize --bg-scale ~/Изображения/
-
-# Image for i3lock:
-bindsym $mod+Shift+l exec i3lock -c 000000 -i ~/Изображения/.Wolf.png
 
 # NetworkManager applet
 exec --no-startup-id nm-applet
