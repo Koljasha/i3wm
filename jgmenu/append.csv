@@ -4,6 +4,6 @@ Exit,^checkout(exit),system-shutdown
 ^tag(exit)
 Exit Openbox,openbox --exit,system-log-out
 Exit i3wm,i3-msg exit,system-log-out
-Suspend,systemctl -i suspend,system-log-out
+Suspend,systemctl -i suspend,system-suspend
 Reboot,systemctl -i reboot,system-reboot
 Poweroff,systemctl -i poweroff,system-shutdown
