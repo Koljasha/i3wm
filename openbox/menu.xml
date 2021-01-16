@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_menu>
     <menu id="root-menu" label="OpenBox 3">
-        <item label="Terminator"> <action name="Execute">
-            <execute>terminator -m</execute>
-        </action> </item>
-        <item label="FireFox"> <action name="Execute">
-            <execute>firefox</execute>
-        </action> </item>
-        <item label="PCManFM"> <action name="Execute">
-            <execute>pcmanfm</execute>
-        </action> </item>
-        <separator />
+ 		<item label="Terminator"> <action name="Execute">
+ 			<execute>terminator -m</execute>
+ 		</action> </item>
+ 		<item label="FireFox"> <action name="Execute">
+ 			<execute>fireFox</execute>
+ 		</action> </item>
+ 		<item label="PCManFM"> <action name="Execute">
+ 			<execute>pcmanfm</execute>
+ 		</action> </item>
+ 		<separator />
         <menu id="1" label="Development">
             <item label="GDB"> <action name="Execute">
                 <execute>gnome-terminal -e gdb</execute>
@@ -95,6 +95,9 @@
             <item label="Ristretto Image Viewer"> <action name="Execute">
                 <execute>ristretto</execute>
             </action> </item>
+            <item label="Viewnior"> <action name="Execute">
+                <execute>viewnior</execute>
+            </action> </item>
             <item label="xcb"> <action name="Execute">
                 <execute>xcb</execute>
             </action> </item>
@@ -108,6 +111,9 @@
             </action> </item>
             <item label="Celluloid"> <action name="Execute">
                 <execute>celluloid</execute>
+            </action> </item>
+            <item label="Hypnotix"> <action name="Execute">
+                <execute>hypnotix</execute>
             </action> </item>
             <item label="mpv Media Player"> <action name="Execute">
                 <execute>mpv --player-operation-mode=pseudo-gui</execute>
@@ -147,11 +153,11 @@
             <item label="Telnet"> <action name="Execute">
                 <execute>gnome-terminal -e telnet</execute>
             </action> </item>
-            <item label="Thunderbird"> <action name="Execute">
-                <execute>thunderbird</execute>
-            </action> </item>
             <item label="Transmission"> <action name="Execute">
                 <execute>transmission-gtk</execute>
+            </action> </item>
+            <item label="Web Apps"> <action name="Execute">
+                <execute>webapp-manager</execute>
             </action> </item>
             <item label="Web Browser"> <action name="Execute">
                 <execute>exo-open --launch WebBrowser</execute>
@@ -166,6 +172,9 @@
             </action> </item>
             <item label="Dictionary"> <action name="Execute">
                 <execute>xfce4-dict</execute>
+            </action> </item>
+            <item label="Document Viewer"> <action name="Execute">
+                <execute>evince</execute>
             </action> </item>
             <item label="LibreOffice Impress"> <action name="Execute">
                 <execute>libreoffice</execute>
@@ -242,7 +251,7 @@
                         <execute>gnome-disks</execute>
                     </action> </item>
                     <item label="Driver Manager"> <action name="Execute">
-                        <execute>driver-manager</execute>
+                        <execute>pkexec driver-manager</execute>
                     </action> </item>
                     <item label="Firewall Configuration"> <action name="Execute">
                         <execute>gufw</execute>
@@ -630,15 +639,15 @@
         <menu id="40" label="OpenBox">
             <menu id="client-list-menu"/>
             <item label="Reconfigure"> <action name="Reconfigure"/> </item>
-            <item label="Restart"> <action name="Restart"/> </item>
+ 			<item label="Restart"> <action name="Restart"/> </item>
             <separator/>
             <item label="Exit"> <action name="Exit"/> </item>
-            <item label="Reboot"> <action name="Execute">
-                <execute>~/.config/openbox/menu_exit_openbox reboot</execute>
-            </action> </item>
-            <item label="Power Off"> <action name="Execute">
-                <execute>~/.config/openbox/menu_exit_openbox poweroff</execute>
-            </action> </item>
+ 			<item label="Reboot"> <action name="Execute">
+ 				<execute>~/.config/openbox/menu_exit_openbox reboot</execute>
+ 			</action> </item>
+ 			<item label="Power Off"> <action name="Execute">
+ 				<execute>~/.config/openbox/menu_exit_openbox poweroff</execute>
+ 			</action> </item>
         </menu>
     </menu>
 </openbox_menu>
