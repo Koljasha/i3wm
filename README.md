@@ -1,3 +1,7 @@
+## Openbox & i3wm settings
+### ->->-> "Deprecated" - look [Arch Linux Installer](https://github.com/Koljasha/archlinux_installer) for current settings <-<-<-
+***
+
 ### i3wm
 
 Установить:
